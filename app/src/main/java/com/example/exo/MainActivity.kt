@@ -34,7 +34,6 @@ class MainActivity : AppCompatActivity() {
         player.setMediaItem(mediaItem)
         player.prepare()
         player.playWhenReady = true
-
     }
 
     private val playerListener = object : Player.Listener {
@@ -60,12 +59,6 @@ class MainActivity : AppCompatActivity() {
         override fun onPlayerError(error: PlaybackException) {
             Log.e("tttt", "Error occurred: ${error.message}")
         }
-
-//        override fun onPlayWhenReadyChanged(playWhenReady: Boolean, reason: Int) {
-//            super.onPlayWhenReadyChanged(playWhenReady, reason)
-//            // Update notification controls if needed
-//            updateNotificationPlayState(playWhenReady)
-//        }
     }
 
 
@@ -85,12 +78,6 @@ class MainActivity : AppCompatActivity() {
         ExoSingleton.release()
     }
 
-//    private fun updateNotificationPlayState(isPlaying: Boolean) {
-//        // Send broadcast to update notification
-//        val intent = Intent("com.your.package.PLAYBACK_STATE_CHANGED")
-//        intent.putExtra("isPlaying", isPlaying)
-//        LocalBroadcastManager.getInstance(this).sendBroadcast(intent)
-//    }
 
 }
 

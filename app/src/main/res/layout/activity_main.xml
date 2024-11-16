@@ -13,6 +13,10 @@
         android:layout_centerInParent="true"
         android:keepScreenOn="true"
         android:background="#000000"
-        app:controller_layout_id="@layout/exo_player_control_view"/>
+        app:controller_layout_id="@layout/exo_control_view"
+        app:show_buffering="when_playing" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+

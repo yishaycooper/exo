@@ -2,12 +2,12 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_gravity="bottom"
     android:background="#80000000"
     android:orientation="vertical"
     android:padding="8dp">
 
-    <!-- Progress Bar -->
     <com.google.android.exoplayer2.ui.DefaultTimeBar
         android:id="@id/exo_progress"
         android:layout_width="match_parent"
@@ -21,29 +21,14 @@
         android:orientation="horizontal"
         android:paddingTop="4dp">
 
-        <!-- Previous Button -->
-        <ImageButton android:id="@id/exo_prev"
-            style="@style/ExoMediaButton.Previous"/>
 
-        <!-- Rewind Button -->
-        <ImageButton android:id="@id/exo_rew"
-            style="@style/ExoMediaButton.Rewind"/>
-
-        <!-- Play Button -->
-        <ImageButton android:id="@id/exo_play"
-            style="@style/ExoMediaButton.Play"/>
-
-        <!-- Pause Button -->
-        <ImageButton android:id="@id/exo_pause"
-            style="@style/ExoMediaButton.Pause"/>
-
-        <!-- Fast Forward Button -->
-        <ImageButton android:id="@id/exo_ffwd"
-            style="@style/ExoMediaButton.FastForward"/>
-
-        <!-- Next Button -->
-        <ImageButton android:id="@id/exo_next"
-            style="@style/ExoMediaButton.Next"/>
+<!--        this not needed because res/values/drawables.xml is used-->
+<!--        android:src="@drawable/play_pause_selector"-->
+        <ImageButton
+            android:id="@id/exo_play_pause"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="?attr/selectableItemBackgroundBorderless"/>
 
     </LinearLayout>
 
@@ -55,7 +40,8 @@
         android:paddingTop="4dp">
 
         <!-- Position -->
-        <TextView android:id="@id/exo_position"
+        <TextView
+            android:id="@id/exo_position"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:textSize="14sp"
@@ -63,10 +49,10 @@
             android:paddingLeft="4dp"
             android:paddingRight="4dp"
             android:includeFontPadding="false"
-            android:textColor="#FFFFFF"/>
+            android:textColor="#FFFFFF" />
 
-        <!-- Duration -->
-        <TextView android:id="@id/exo_duration"
+        <TextView
+            android:id="@id/exo_duration"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:textSize="14sp"
@@ -74,8 +60,15 @@
             android:paddingLeft="4dp"
             android:paddingRight="4dp"
             android:includeFontPadding="false"
-            android:textColor="#FFFFFF"/>
+            android:textColor="#FFFFFF" />
 
     </LinearLayout>
 
 </LinearLayout>
+
+
+
+
+
+
+

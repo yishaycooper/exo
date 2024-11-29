@@ -11,14 +11,12 @@ import android.content.Intent
 import android.content.IntentFilter
 import android.graphics.Bitmap
 import android.graphics.BitmapFactory
-import android.os.Binder
 import android.os.Build
 import android.os.Bundle
 import android.os.IBinder
 import android.support.v4.media.session.MediaSessionCompat
 import android.support.v4.media.session.PlaybackStateCompat
 import android.util.Log
-import androidx.core.app.NotificationCompat
 import androidx.localbroadcastmanager.content.LocalBroadcastManager
 import com.google.android.exoplayer2.ExoPlayer
 import com.google.android.exoplayer2.Player
@@ -35,11 +33,7 @@ class ExoService : Service() {
     private lateinit var notificationManager: NotificationManager
     private lateinit var player: ExoPlayer
 
-
-
-
     private lateinit var playbackStateReceiver: BroadcastReceiver
-
 
 
     override fun onCreate()     {

@@ -22,7 +22,7 @@
         android:paddingTop="4dp">
 
 
-<!--        this not needed because res/values/drawables.xml is used-->
+<!--        this is not needed because res/values/drawables.xml is used-->
 <!--        android:src="@drawable/play_pause_selector"-->
         <ImageButton
             android:id="@id/exo_play_pause"

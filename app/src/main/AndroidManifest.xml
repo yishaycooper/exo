@@ -7,6 +7,7 @@
     <uses-permission android:name="android.permission.FOREGROUND_SERVICE" />
     <uses-permission android:name="android.permission.FOREGROUND_SERVICE_MEDIA_PLAYBACK" />
 
+
     <application
         android:allowBackup="true"
         android:dataExtractionRules="@xml/data_extraction_rules"
@@ -28,12 +29,24 @@
         </activity>
 
 
-        <service android:name=".ExoService"
+        <service
+            android:name=".ExoService"
             android:enabled="true"
             android:exported="false"
             android:stopWithTask="true"
             android:foregroundServiceType="mediaPlayback" >
         </service>
+
+        <service
+            android:name=".ExoBrowserService"
+            android:exported="false"
+            android:enabled="true"
+            android:foregroundServiceType="mediaPlayback" >
+            <intent-filter>
+                <action android:name="android.media.browse.MediaBrowserService" />
+            </intent-filter>
+        </service>
+
 
 
     </application>

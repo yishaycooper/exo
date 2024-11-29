@@ -16,6 +16,31 @@
         app:controller_layout_id="@layout/exo_control_view"
         app:show_buffering="when_playing" />
 
+    <Button
+        android:id="@+id/play_pause_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Play/Pause"
+        android:layout_marginTop="20dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"/>
+
+    <Button
+        android:id="@+id/custom_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Custom"
+        android:layout_marginTop="20dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        app:layout_constraintTop_toBottomOf="@+id/play_pause_button"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"/>
+
+
 </androidx.constraintlayout.widget.ConstraintLayout>
 
 

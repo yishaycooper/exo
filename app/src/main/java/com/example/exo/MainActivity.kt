@@ -122,7 +122,6 @@ class MainActivity : AppCompatActivity() {
             }
         }
 
-
         // Handle other commands like stop, seek, etc.
     }
 
@@ -150,16 +149,15 @@ class MainActivity : AppCompatActivity() {
 
 
 
-
-
-
-
-
-// using only TransportControls
+// simplified  using only TransportControls via mediaSessionConnector
+// mediaSessionConnector = MediaSessionConnector(mediaSession)
+// mediaSessionConnector.setPlayer(player)
+// mediaSession.controller.transportControls.play()
 //class MainActivity : AppCompatActivity() {
 //
 //    private lateinit var styledPlayerView: StyledPlayerView
 //    private lateinit var player: ExoPlayer
+//
 //    private lateinit var mediaSession: MediaSessionCompat
 //    private lateinit var mediaSessionConnector: MediaSessionConnector
 //
